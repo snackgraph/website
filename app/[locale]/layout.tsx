@@ -1,4 +1,5 @@
 // STYLES
+import "@/styles/font.css";
 import "@/styles/global.css";
 
 // COMPONENTS
