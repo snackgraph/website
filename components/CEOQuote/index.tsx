@@ -6,15 +6,15 @@ import Image from "next/image";
 function CEOQuote() {
   return (
     <>
-      <div className="grid place-content-center h-dvh">
+      <div className="grid place-content-center h-[50dvh] px-3">
         <div className="max-w-screen-lg m-auto">
           <section className="custom-container">
             <div className="background">
               <div className="trail" />
             </div>
             <div className="custom-content border border-gray-300 drop-shadow-sm">
-              <div className="p-5">
-                <p className="text-2xl italic text-[var(--color-description)]">
+              <div className="p-3 lg:p-5">
+                <p className="text-xl lg:text-2xl italic text-[var(--color-description)]">
                   {`"Some of the most interesting CSS tricks use properties that
                   you might have never even heard of. My goal is to make you
                   confident in your abilities to make your ideas come to life
@@ -33,10 +33,10 @@ function CEOQuote() {
                   </div>
 
                   <div className="grid place-content-center">
-                    <p className="text-lg font-semibold text-[var(--color-description)]">
+                    <p className="lg:text-lg font-semibold text-[var(--color-description)]">
                       Nelson Hernández
                     </p>
-                    <p className="text-lg text-[var(--color-description)] opacity-80">
+                    <p className="lg:text-lg text-[var(--color-description)] opacity-80">
                       Founder & CEO, SnackGraph
                     </p>
                   </div>

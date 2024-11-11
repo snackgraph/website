@@ -57,7 +57,6 @@ body::-webkit-scrollbar-thumb {
 
 .nav-list-float {
   z-index: 5000;
-  background-color: #ffffff;
   flex-direction: row;
   justify-content: center;
   align-items: center;

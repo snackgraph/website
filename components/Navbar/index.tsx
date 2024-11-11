@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <>
       <div className="hidden md:block">
-        <nav className="nav-list-float animationFadeInDown max-w-lg rounded-xl border border-gray-200 drop-shadow-sm">
+        <nav className="nav-list-float animationFadeInDown max-w-lg rounded-xl border border-gray-200 drop-shadow-sm backdrop-blur-sm bg-white/80">
           {paths.map((path) => {
             return (
               <Link
