@@ -1,0 +1,33 @@
+/* SCROLL TABLE */
+
+.scroll-table {
+  overflow-y: auto;
+  height: 63vh;
+  transition: 1s;
+}
+.scroll-table::-webkit-scrollbar {
+  width: 7px;
+  height: 8px;
+  background: var(--color-dark);
+}
+/* Handle */
+.scroll-table::-webkit-scrollbar-thumb {
+  background: var(--bg-brand-sel);
+}
+
+@media (min-width: 768px) {
+  .scroll-table {
+    overflow-y: auto;
+    height: 73vh;
+    transition: 1s;
+  }
+  .scroll-table::-webkit-scrollbar {
+    width: 7px;
+    height: 8px;
+    background: var(--color-dark);
+  }
+  /* Handle */
+  .scroll-table::-webkit-scrollbar-thumb {
+    background: var(--bg-brand-sel);
+  }
+}

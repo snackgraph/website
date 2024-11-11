@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+npx --yes oxlint@0.3.5 --deny-warnings -c .eslintrc.json
+
+if [[ "$?" -ne 0 ]]; then
+    echo "Linting errors found. Please fix them before pushing."
+    return 1
+fi

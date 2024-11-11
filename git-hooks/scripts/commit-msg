@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+commit_message=$(cat "$1")
+
+if [ -z "$commit_message" ]; then
+    echo "Commit message must not be empty"
+    exit 1
+fi
+
+# CONVENTIAL COMMIT SCOPES
+texts=("[FIX]" "[FEAT]" "[DELETE]")
+
+# STRING FOR VALIDATE
+input=$commit_message
+
+valid=false
+
+for text in "${texts[@]}"; do
+    if [[ "$input" == *"$text"* ]]; then
+        valid=true
+        break
+    fi
+done
+
+# Imprimir el resultado de la validación
+if [ "$valid" = false ]; then
+    echo -e "Please write commit with a scope by example: \n"
+    echo " [FEAT] must be used when a commit adds a new feature in the repository."
+    echo " [FIX] must be used when a commit represents a bug fix in the repository."
+    echo " [DELETE] must be used when a commit represents a deletion of code in the repository."
+    exit 1
+fi

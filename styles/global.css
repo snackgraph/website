@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-title: #f7f8f8;
+    --color-description: #c8cfcf;
+  }
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  background: #000814;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+  width: auto;
+  transition: 1s;
+}
+body::-webkit-scrollbar {
+  width: 7px;
+  background: var(--color-dark);
+}
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #21358a;
+}
+
+.effect-right {
+  transform: translateY(-350px) rotate(14deg);
+  background: radial-gradient(
+    68.54% 68.72% at 55.02% 31.46%,
+    hsla(0, 0%, 85%, 0.08) 0,
+    hsla(0, 0%, 55%, 0.02) 50%,
+    hsla(0, 0%, 45%, 0) 80%
+  );
+}
+
+.effect-left {
+  transform: rotate(101deg);
+  background: radial-gradient(
+    68.54% 68.72% at 55.02% 31.46%,
+    hsla(0, 0%, 85%, 0.08) 0,
+    hsla(0, 0%, 55%, 0.02) 50%,
+    hsla(0, 0%, 45%, 0) 80%
+  );
+}
+
+.nav-list-float {
+  z-index: 5000;
+  background-color: #0D1520;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: fixed;
+  top: 30px;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+}
+
+@keyframes opacityanimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animation-op {
+  animation: 1.2s ease-in 0s 1 normal forwards running opacityanimation;
+}
+
+@keyframes fadeindown {
+  from {
+    opacity: 0;
+    top: 0px;
+  }
+
+  to {
+    opacity: 1;
+    top: 30px;
+  }
+}
+
+.animationFadeInDown {
+  visibility: visible;
+  animation: fadeindown 0.5s;
+}
+
+.logo-float {
+  animation: float 4s ease-in-out infinite both;
+  animation-delay: 1s;
+}
+.delay-12 {
+  animation-delay: 2s;
+}
+
+.delay-13 {
+  animation-delay: 3s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(5%);
+  }
+
+  50% {
+    transform: translateY(15%);
+  }
+
+  100% {
+    transform: translateY(5%);
+  }
+}
+
+@keyframes loop-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-infinite-scroll {
+  animation: loop-scroll 20s linear infinite;
+}
+
+.card-services {
+  background-color: rgba(255, 255, 255, 0.05);
+}
