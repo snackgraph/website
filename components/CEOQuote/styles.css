@@ -6,10 +6,10 @@
 }
 
 .custom-content {
-  background: linear-gradient(#0D1520, #0D1520) padding-box transparent;
+  background: linear-gradient(#ffffff, #ffffff) padding-box transparent;
   border-radius: 8px;
-  padding: 0 1.5rem;
-  border: 2px solid transparent;
+  padding: 0 2rem;
+  border: 2.5px solid transparent;
   text-align: center;
 }
 
@@ -17,7 +17,6 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: #0D1520;
   border-radius: 8px;
 }
 
@@ -25,17 +24,12 @@
   width: 100px;
   aspect-ratio: 2 / 1;
   position: absolute;
-  background: radial-gradient(100% 100% at right, #21358a, transparent 120%);
+  background: radial-gradient(100% 100% at right, var(--bg-brand-sel), transparent 120%);
   offset-path: border-box;
   offset-anchor: 100% 50%;
-  animation: journey var(--speed, 6s) infinite linear;
+  animation: journey 6s infinite linear;
 }
 
-@container (width > 600px) {
-  .trail {
-    --speed: 12s;
-  }
-}
 
 @keyframes journey {
   to {

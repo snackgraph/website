@@ -1,24 +1,25 @@
 "use client";
 
+// COMPONENTS
 import Link from "next/link";
 
 function Navbar() {
   return (
     <>
       <div className="hidden md:block">
-        <div className="nav-list-float animationFadeInDown max-w-lg rounded-xl border border-gray-700">
+        <nav className="nav-list-float animationFadeInDown max-w-lg rounded-xl border border-gray-200 drop-shadow-sm">
           {paths.map((path) => {
             return (
               <Link
                 key={path.id}
                 href={path.path}
-                className="select-none p-2 text-[var(--color-description)] hover:text-[var(--color-title)] border border-transparent duration-300"
+                className="select-none p-2 text-[var(--color-description)] hover:text-[var(--color-title)] duration-300 hover:underline"
               >
                 {path.name}
               </Link>
             );
           })}
-        </div>
+        </nav>
       </div>
     </>
   );
@@ -29,27 +30,22 @@ export default Navbar;
 const paths = [
   {
     id: "1",
-    name: "Inicio",
+    name: "Home",
     path: "/",
   },
   {
     id: "2",
-    name: "Marketplace",
-    path: "/",
-  },
-  {
-    id: "3",
-    name: "Clientes",
+    name: "Products",
     path: "/",
   },
   {
     id: "4",
-    name: "Acerca de",
+    name: "Pricing",
     path: "/",
   },
   {
     id: "5",
-    name: "Ubicaciones",
+    name: "About",
     path: "/",
   },
 ];

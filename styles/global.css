@@ -4,8 +4,11 @@
 
 @layer base {
   :root {
-    --color-title: #f7f8f8;
-    --color-description: #c8cfcf;
+    --color-title: #1c1d1f;
+    --color-description: #6b7280;
+    --color-description-dark: #ededed;
+    --bg-brand-sel: #11b57f;
+    --bg-brand-sel-hover: #059669;
   }
 }
 
@@ -14,8 +17,8 @@ body {
   font-family: "Inter", sans-serif;
   padding: 0;
   margin: 0;
-  background: #000814;
   overflow-x: hidden;
+  background: #fafafa;
 }
 
 body {
@@ -29,16 +32,16 @@ body::-webkit-scrollbar {
 }
 /* Handle */
 body::-webkit-scrollbar-thumb {
-  background: #21358a;
+  background: var(--bg-brand-sel-hover);
 }
 
 .effect-right {
   transform: translateY(-350px) rotate(14deg);
   background: radial-gradient(
     68.54% 68.72% at 55.02% 31.46%,
-    hsla(0, 0%, 85%, 0.08) 0,
-    hsla(0, 0%, 55%, 0.02) 50%,
-    hsla(0, 0%, 45%, 0) 80%
+    hsla(111, 89%, 45%, 0.08) 0,
+    hsla(70, 92%, 46%, 0.02) 50%,
+    hsla(62, 86%, 49%, 0) 80%
   );
 }
 
@@ -46,15 +49,15 @@ body::-webkit-scrollbar-thumb {
   transform: rotate(101deg);
   background: radial-gradient(
     68.54% 68.72% at 55.02% 31.46%,
-    hsla(0, 0%, 85%, 0.08) 0,
-    hsla(0, 0%, 55%, 0.02) 50%,
-    hsla(0, 0%, 45%, 0) 80%
+    hsla(111, 89%, 45%, 0.08) 0,
+    hsla(70, 92%, 46%, 0.02) 50%,
+    hsla(62, 86%, 49%, 0) 80%
   );
 }
 
 .nav-list-float {
   z-index: 5000;
-  background-color: #0D1520;
+  background-color: #ffffff;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -96,47 +99,4 @@ body::-webkit-scrollbar-thumb {
 .animationFadeInDown {
   visibility: visible;
   animation: fadeindown 0.5s;
-}
-
-.logo-float {
-  animation: float 4s ease-in-out infinite both;
-  animation-delay: 1s;
-}
-.delay-12 {
-  animation-delay: 2s;
-}
-
-.delay-13 {
-  animation-delay: 3s;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(5%);
-  }
-
-  50% {
-    transform: translateY(15%);
-  }
-
-  100% {
-    transform: translateY(5%);
-  }
-}
-
-@keyframes loop-scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.animate-infinite-scroll {
-  animation: loop-scroll 20s linear infinite;
-}
-
-.card-services {
-  background-color: rgba(255, 255, 255, 0.05);
 }
