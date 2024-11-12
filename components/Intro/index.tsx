@@ -58,7 +58,7 @@ function Intro() {
 
         <div className="flex justify-center mt-5">
           <button className="px-4 py-2 text-sm text-white fill-white bg-[var(--bg-brand-sel)] hover:bg-[var(--bg-brand-sel-hover)] duration-300 text-center font-semibold rounded-lg inline-flex gap-1">
-            Get Started
+            Create API Key
           </button>
         </div>
       </div>
