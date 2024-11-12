@@ -6,13 +6,13 @@ function Intro() {
       <div className="hidden lg:block">
         <div className="effect-right absolute left-[-30%] top-[30%] w-[80%] h-[60%] -z-0" />
       </div>
-
       <div className="hidden lg:block">
         <div className="effect-left absolute right-[-30%] top-[-30%] w-[80%] h-[60%] -z-0" />
       </div>
       <div className="grid place-content-center h-dvh z-50 animation-op">
         <div className="flex justify-center items-center">
           <Link
+            role="link"
             href="/"
             className="flex gap-2 px-3 py-[9px] bg-gray-50 hover:bg-gray-100 duration-300 text-center font-semibold rounded-2xl border border-gray-200 drop-shadow-sm hover:border-blue-600"
           >
@@ -22,10 +22,7 @@ function Intro() {
               </div>
             </div>
             <div className="grid place-content-center">
-              <span
-                id="endpoint"
-                className="text-sm text-[var(--color-description)]"
-              >
+              <span className="text-sm text-[var(--color-description)]">
                 Our Countries API is live now! 🎉
               </span>
             </div>
@@ -57,9 +54,15 @@ function Intro() {
         </p>
 
         <div className="flex justify-center mt-5">
-          <button className="px-4 py-2 text-sm text-white fill-white bg-[var(--bg-brand-sel)] hover:bg-[var(--bg-brand-sel-hover)] duration-300 text-center font-semibold rounded-lg inline-flex gap-1">
+          <Link
+            role="link"
+            href="https://dashboard.snackgraph.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 text-sm text-white fill-white bg-[var(--bg-brand-sel)] hover:bg-[var(--bg-brand-sel-hover)] duration-300 text-center font-semibold rounded-lg inline-flex gap-1"
+          >
             Create API Key
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -13,22 +13,23 @@ function CEOQuote() {
               <div className="trail" />
             </div>
             <div className="custom-content border border-gray-300 drop-shadow-sm">
-              <div className="p-3 lg:p-5">
-                <p className="text-xl lg:text-2xl italic text-[var(--color-description)]">
+              <div className="p-5">
+                <p id="SnackGraph CEO's quote" className="text-xl lg:text-xl italic text-[var(--color-description)]">
                   {`"Some of the most interesting CSS tricks use properties that
                   you might have never even heard of. My goal is to make you
                   confident in your abilities to make your ideas come to life
                   with those tricks."`}
                 </p>
 
-                <div className="flex justify-center items-center gap-3 mt-10">
+                <div className="flex justify-center items-center gap-3 mt-5">
                   <div>
                     <Image
                       src="/ceo.jpg"
-                      alt="Nelson Hernández"
+                      alt="Photograph of a person sitting smiling"
                       height={50}
                       width={50}
                       className="rounded-full"
+                      role="img"
                     />
                   </div>
 
