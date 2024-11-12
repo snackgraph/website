@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 // COMPONENTS
 import Intro from "@/components/Intro";
 import CEOQuote from "@/components/CEOQuote";
+import GraphQLPower from "@/components/GraphQLPower";
 
 const title = "SnackGraph - Supercharge Your Projects with Our APIs";
 const description =
@@ -32,6 +33,7 @@ export default function Home() {
   return (
     <main>
       <Intro />
+      <GraphQLPower/>
       <CEOQuote />
     </main>
   );

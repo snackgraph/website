@@ -3,8 +3,13 @@ import Link from "next/link";
 function Intro() {
   return (
     <div className="h-dvh px-3">
-      <div className="effect-right absolute left-[-30%] top-[30%] w-[80%] h-[60%] -z-0" />
-      <div className="effect-left absolute right-[-30%] top-[-30%] w-[80%] h-[60%] -z-0" />
+      <div className="hidden lg:block">
+        <div className="effect-right absolute left-[-30%] top-[30%] w-[80%] h-[60%] -z-0" />
+      </div>
+
+      <div className="hidden lg:block">
+        <div className="effect-left absolute right-[-30%] top-[-30%] w-[80%] h-[60%] -z-0" />
+      </div>
       <div className="grid place-content-center h-dvh z-50 animation-op">
         <div className="flex justify-center items-center">
           <Link
@@ -45,7 +50,7 @@ function Intro() {
         </h1>
         <p
           id="description"
-          className="text-xl text-center max-w-screen-md m-auto text-[var(--color-description)]"
+          className="lg:text-xl text-center max-w-screen-md m-auto text-[var(--color-description)]"
         >
           We offer a set of APIs designed for developers and data enthusiasts
           who want to access to information easily.

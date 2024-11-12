@@ -36,7 +36,7 @@ function CEOQuote() {
                     <p className="lg:text-lg font-semibold text-[var(--color-description)]">
                       Nelson Hernández
                     </p>
-                    <p className="lg:text-lg text-[var(--color-description)] opacity-80">
+                    <p className="lg:text-base text-[var(--color-description)] opacity-80">
                       Founder & CEO, SnackGraph
                     </p>
                   </div>
