@@ -1,0 +1,15 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - dev
+  workflow_call:
+
+jobs:
+  lint:
+    name: Executing Linter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npx --yes oxlint@0.9.10 --deny-warnings -c .eslintrc.json
