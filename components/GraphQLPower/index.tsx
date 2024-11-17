@@ -13,13 +13,13 @@ function GraphQLPower() {
 
       <div className="grid grid-cols-3 gap-5 mt-10">
         <div className="flex justify-center bg-white p-3 w-full rounded-2xl border border-gray-200">
-          <p className="text-sm lg:text-base flex justify-center items-center text-center">
+          <p className="text-sm lg:text-base flex justify-center items-center text-center text-[var(--color-description)]">
             Powerful APIs
           </p>
         </div>
         <div />
         <div className="flex justify-center bg-white p-3 w-full rounded-2xl border border-gray-200">
-          <p className="text-sm lg:text-base flex justify-center items-center text-center">
+          <p className="text-sm lg:text-base flex justify-center items-center text-center text-[var(--color-description)]">
             Efficient Data Fetching
           </p>
         </div>
@@ -130,13 +130,13 @@ function GraphQLPower() {
 
       <div className="grid grid-cols-3 gap-5">
         <div className="flex justify-center bg-white p-3 w-full rounded-2xl border border-gray-200">
-          <p className="text-sm lg:text-base flex justify-center items-center text-center">
+          <p className="text-sm lg:text-base flex justify-center items-center text-center text-[var(--color-description)]">
             Strong Typing and Self-Documentation
           </p>
         </div>
         <div />
         <div className="flex justify-center bg-white p-3 w-full rounded-2xl border border-gray-200">
-          <p className="text-sm lg:text-base flex justify-center items-center text-center">
+          <p className="text-sm lg:text-base flex justify-center items-center text-center text-[var(--color-description)]">
             Improved Developer Experience
           </p>
         </div>

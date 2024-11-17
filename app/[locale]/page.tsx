@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Intro from "@/components/Intro";
 import CEOQuote from "@/components/CEOQuote";
 import GraphQLPower from "@/components/GraphQLPower";
+import Footer from "@/components/Footer";
 
 const title = "SnackGraph - Supercharge Your Projects with Our APIs";
 const description =
@@ -33,8 +34,9 @@ export default function Home() {
   return (
     <main>
       <Intro />
-      <GraphQLPower/>
+      <GraphQLPower />
       <CEOQuote />
+      <Footer />
     </main>
   );
 }

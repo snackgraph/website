@@ -2,12 +2,12 @@ import Link from "next/link";
 
 function Intro() {
   return (
-    <div className="h-dvh px-3">
+    <div className="h-dvh px-3 relative">
       <div className="hidden lg:block">
-        <div className="effect-right absolute left-[-30%] top-[30%] w-[80%] h-[60%] -z-0" />
+        <div className="effect-right absolute left-[-30%] top-[30%] w-[80%] h-[60%] z-0" />
       </div>
       <div className="hidden lg:block">
-        <div className="effect-left absolute right-[-30%] top-[-30%] w-[80%] h-[60%] -z-0" />
+        <div className="effect-left absolute right-[-30%] top-[-20%] w-[80%] h-[60%] z-0" />
       </div>
       <div className="grid place-content-center h-dvh z-50 animation-op">
         <div className="flex justify-center items-center">
