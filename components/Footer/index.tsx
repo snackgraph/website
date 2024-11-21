@@ -16,8 +16,8 @@ function Footer() {
         </div>
 
         <div className="grid grid-cols-2 lg:flex gap-10">
-          <div>
-            <p className="font-semibold">Connect with us</p>
+        <div className="grid place-content-center lg:place-content-start">
+        <p className="font-semibold">Connect with us</p>
             <nav>
               <ul className="flex-col">
                 {socialMedia.map(({ id, username, link, icon }) => {
@@ -43,7 +43,7 @@ function Footer() {
               </ul>
             </nav>
           </div>
-          <div>
+          <div className="grid place-content-center lg:place-content-start">
             <p className="font-semibold">Resources</p>
             <nav>
               <ul className="flex-col">
@@ -77,7 +77,7 @@ function Footer() {
             </nav>
           </div>
 
-          <div>
+          <div className="grid place-content-center lg:place-content-start">
             <p className="font-semibold">APIs</p>
             <nav>
               <ul className="flex-col">
@@ -99,7 +99,7 @@ function Footer() {
             </nav>
           </div>
 
-          <div>
+          <div className="grid place-content-center lg:place-content-start">
             <p className="font-semibold">Legal</p>
             <nav>
               <ul className="flex-col">
