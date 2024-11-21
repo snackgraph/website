@@ -7,7 +7,7 @@ function CEOQuote() {
   return (
     <>
       <div className="grid place-content-center h-[50dvh] px-3">
-        <div className="max-w-screen-lg m-auto">
+        <div className="max-w-screen-md m-auto">
           <section className="custom-container">
             <div className="background">
               <div className="trail" />
@@ -15,10 +15,7 @@ function CEOQuote() {
             <div className="custom-content border border-gray-300 drop-shadow-sm">
               <div className="p-5">
                 <p id="SnackGraph CEO's quote" className="text-xl lg:text-xl italic text-[var(--color-description)]">
-                  {`"Some of the most interesting CSS tricks use properties that
-                  you might have never even heard of. My goal is to make you
-                  confident in your abilities to make your ideas come to life
-                  with those tricks."`}
+                  {`"As a Web Developer, I've always wanted a tool like SnackGraph: powerful, robust, and easy to integrate in projects."`}
                 </p>
 
                 <div className="flex justify-center items-center gap-3 mt-5">
