@@ -6,7 +6,7 @@ import Image from "next/image";
 function CEOQuote() {
   return (
     <>
-      <div className="grid place-content-center h-[50dvh] px-3">
+      <div className="grid place-content-center h-[70dvh] px-3">
         <div className="max-w-screen-md m-auto">
           <section className="custom-container">
             <div className="background">
