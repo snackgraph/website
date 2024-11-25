@@ -5,7 +5,6 @@ import { faq } from "@/components/Faq/faq";
 import Intro from "@/components/Home/Intro";
 import CEOQuote from "@/components/Home/CEOQuote";
 import GraphQLPower from "@/components/Home/GraphQLPower";
-import Footer from "@/components/Footer";
 import Faq from "@/components/Faq";
 
 const title = "SnackGraph - Supercharge Your Projects with Our APIs";
@@ -58,7 +57,6 @@ export default function Home() {
       <GraphQLPower />
       <CEOQuote />
       <Faq />
-      <Footer />
     </main>
   );
 }

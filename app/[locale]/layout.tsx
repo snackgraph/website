@@ -4,6 +4,7 @@ import "@/styles/global.css";
 
 // COMPONENTS
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default async function RootLayout({
   children,
@@ -15,6 +16,7 @@ export default async function RootLayout({
       <body>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
