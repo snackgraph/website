@@ -7,7 +7,7 @@ function Footer() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 px-3 pt-12">
         <div className="pt-10 pb-10 lg:mb-0 order-last lg:order-first">
           <div className="grid place-content-center">
-            <Image alt="" src="/logo.svg" width={220} height={48} />
+            <Image alt="" src="/brand-dark-bg.svg" width={400} height={50} />
           </div>
 
           <div className="mt-10 text-sm text-center">
