@@ -2,7 +2,7 @@ import { faq } from "./faq";
 function Faq() {
   return (
     <div className="grid place-content-center h-[70dvh] px-3">
-      <h2 className="text-2xl md:text-5xl font-extrabold text-center max-w-screen-md m-auto py-5 text-[var(--color-title)]">
+      <h2 className="text-2xl md:text-5xl font-bold text-center max-w-screen-md m-auto py-5 text-[var(--color-title)]">
         FAQ
       </h2>
       <div>

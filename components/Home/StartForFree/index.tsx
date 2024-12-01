@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-function TryForFree() {
+function StartForFree() {
   return (
     <div className="grid place-content-center h-[80dvh] px-3 bg-white">
       <div className="max-w-screen-2xl m-auto">
@@ -36,8 +36,8 @@ function TryForFree() {
           </div>
           <div className="grid place-content-center">
             <Image
-              src="/cubes/three-cubes.svg"
-              alt="three cubes"
+              src="/snackgraph.svg"
+              alt="SnackGraph's brand"
               height={600}
               width={600}
               className="size-[220px] lg:size-[600px]"
@@ -49,4 +49,4 @@ function TryForFree() {
   );
 }
 
-export default TryForFree;
+export default StartForFree;

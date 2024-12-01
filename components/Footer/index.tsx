@@ -9,8 +9,8 @@ function Footer() {
           <div className="grid place-content-center">
             <div className="hidden lg:block">
               <Image
-                alt="SnackGraph's brand"
-                src="/brand-dark-bg.svg"
+                alt="SnackGraph's brand dark version"
+                src="/brand-dark.svg"
                 width={500}
                 height={500}
               />

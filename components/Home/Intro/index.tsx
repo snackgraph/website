@@ -3,11 +3,8 @@ import Link from "next/link";
 function Intro() {
   return (
     <div className="h-dvh px-3 relative">
-      <div className="hidden lg:block">
-        <div className="effect-right absolute left-[-30%] top-[30%] w-[80%] h-[60%] z-0" />
-      </div>
-      <div className="hidden lg:block">
-        <div className="effect-left absolute right-[-30%] top-[-20%] w-[80%] h-[60%] z-0" />
+      <div className="absolute top-0 -z-10 h-full w-full bg-white">
+        <div className="absolute bottom-auto left-auto right-0 top-0 size-[450px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(17,181,127,0.5)] opacity-50 blur-[80px]"></div>
       </div>
       <div className="grid place-content-center h-dvh z-50 animation-op">
         <div className="flex justify-center items-center">
@@ -40,7 +37,7 @@ function Intro() {
 
         <h1
           id="title"
-          className="text-3xl md:text-6xl font-extrabold text-center max-w-screen-md m-auto py-5 text-[var(--color-title)]"
+          className="text-3xl md:text-6xl font-bold text-center max-w-screen-md m-auto py-5 text-[var(--color-title)]"
         >
           Supercharge Your Projects with Our APIs
         </h1>
