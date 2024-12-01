@@ -6,6 +6,7 @@ import Intro from "@/components/Home/Intro";
 import CEOQuote from "@/components/Home/CEOQuote";
 import GraphQLPower from "@/components/Home/GraphQLPower";
 import Faq from "@/components/Faq";
+import TryForFree from "@/components/Home/TryForFree";
 
 const title = "SnackGraph - Supercharge Your Projects with Our APIs";
 const description =
@@ -57,6 +58,7 @@ export default function Home() {
       <GraphQLPower />
       <CEOQuote />
       <Faq />
+      <TryForFree />
     </main>
   );
 }

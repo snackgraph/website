@@ -3,122 +3,137 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="lg:h-[50dvh] bg-[#222327] text-[--color-description-dark] z-50 px-3">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 px-3 pt-12">
+    <footer className="lg:h-[45dvh] bg-[#222327] text-[--color-description-dark] z-50 px-3">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 px-3 pt-28">
         <div className="pt-10 pb-10 lg:mb-0 order-last lg:order-first">
           <div className="grid place-content-center">
-            <Image alt="" src="/brand-dark-bg.svg" width={400} height={50} />
+            <div className="hidden lg:block">
+              <Image
+                alt="SnackGraph's brand"
+                src="/brand-dark-bg.svg"
+                width={500}
+                height={500}
+              />
+            </div>
+            <div className="lg:hidden">
+              <Image
+                alt="SnackGraph's brand"
+                src="/brand-dark-bg.svg"
+                width={210}
+                height={210}
+              />
+            </div>
           </div>
 
           <div className="mt-10 text-sm text-center">
             © {new Date().getFullYear()} SnackGraph. All rights reserved.
           </div>
         </div>
-
-        <div className="grid grid-cols-2 lg:flex gap-10">
-          <div className="grid place-content-center lg:place-content-start">
-            <p className="font-semibold">Connect with us</p>
-            <nav>
-              <ul className="flex-col">
-                {socialMedia.map(({ id, username, link, icon }) => {
-                  return (
-                    <li key={id} className="my-5">
-                      <Link
-                        role="link"
-                        href={link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex gap-2 hover:text-blue-400 hover:underline duration-100"
-                      >
-                        <span className="grid place-content-center">
-                          {icon}
-                        </span>
-                        <span className="grid place-content-center text-sm">
-                          {username}
-                        </span>
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            </nav>
-          </div>
-          <div className="grid place-content-center lg:place-content-start">
-            <p className="font-semibold">Resources</p>
-            <nav>
-              <ul className="flex-col">
-                {resources.map(({ id, title, icon, link }) => {
-                  return (
-                    <li key={id} className="my-5">
-                      <Link
-                        href={link}
-                        target={link.includes("https") ? "_blank" : undefined}
-                        rel={
-                          link.includes("https")
-                            ? "noopener noreferrer"
-                            : undefined
-                        }
-                        className="flex gap-2 hover:text-blue-400 hover:underline duration-100"
-                      >
-                        <span className="grid place-content-center text-sm">
-                          {title}
-                        </span>
-
-                        {icon !== null && (
+        <div className="grid place-content-center">
+          <div className="grid grid-cols-2 lg:flex gap-10">
+            <div className="lg:grid lg:place-content-start">
+              <p className="font-semibold">Connect with us</p>
+              <nav>
+                <ul className="flex-col">
+                  {socialMedia.map(({ id, username, link, icon }) => {
+                    return (
+                      <li key={id} className="my-5">
+                        <Link
+                          role="link"
+                          href={link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex gap-2 hover:text-blue-400 hover:underline duration-100"
+                        >
                           <span className="grid place-content-center">
                             {icon}
                           </span>
-                        )}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            </nav>
-          </div>
+                          <span className="grid place-content-center text-sm">
+                            {username}
+                          </span>
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </nav>
+            </div>
+            <div className="lg:grid lg:place-content-start">
+              <p className="font-semibold">Resources</p>
+              <nav>
+                <ul className="flex-col">
+                  {resources.map(({ id, title, icon, link }) => {
+                    return (
+                      <li key={id} className="my-5">
+                        <Link
+                          href={link}
+                          target={link.includes("https") ? "_blank" : undefined}
+                          rel={
+                            link.includes("https")
+                              ? "noopener noreferrer"
+                              : undefined
+                          }
+                          className="flex gap-2 hover:text-blue-400 hover:underline duration-100"
+                        >
+                          <span className="grid place-content-center text-sm">
+                            {title}
+                          </span>
 
-          <div className="grid place-content-center lg:place-content-start">
-            <p className="font-semibold">APIs</p>
-            <nav>
-              <ul className="flex-col">
-                {apis.map(({ id, title, link }) => {
-                  return (
-                    <li key={id} className="my-5">
-                      <Link
-                        href={link}
-                        className="flex gap-2 hover:text-blue-400 hover:underline duration-100"
-                      >
-                        <span className="grid place-content-center text-sm">
-                          {title}
-                        </span>
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            </nav>
-          </div>
+                          {icon !== null && (
+                            <span className="grid place-content-center">
+                              {icon}
+                            </span>
+                          )}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </nav>
+            </div>
 
-          <div className="grid place-content-center lg:place-content-start">
-            <p className="font-semibold">Legal</p>
-            <nav>
-              <ul className="flex-col">
-                {legal.map(({ id, title, link }) => {
-                  return (
-                    <li key={id} className="my-5">
-                      <Link
-                        href={link}
-                        className="flex gap-2 hover:text-blue-400 hover:underline duration-100"
-                      >
-                        <span className="grid place-content-center text-sm">
-                          {title}
-                        </span>
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            </nav>
+            <div className="lg:grid lg:place-content-start">
+              <p className="font-semibold">APIs</p>
+              <nav>
+                <ul className="flex-col">
+                  {apis.map(({ id, title, link }) => {
+                    return (
+                      <li key={id} className="my-5">
+                        <Link
+                          href={link}
+                          className="flex gap-2 hover:text-blue-400 hover:underline duration-100"
+                        >
+                          <span className="grid place-content-center text-sm">
+                            {title}
+                          </span>
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </nav>
+            </div>
+            <div className="lg:grid lg:place-content-start">
+              <p className="font-semibold">Legal</p>
+              <nav>
+                <ul className="flex-col">
+                  {legal.map(({ id, title, link }) => {
+                    return (
+                      <li key={id} className="my-5">
+                        <Link
+                          href={link}
+                          className="flex gap-2 hover:text-blue-400 hover:underline duration-100"
+                        >
+                          <span className="grid place-content-center text-sm">
+                            {title}
+                          </span>
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </div>

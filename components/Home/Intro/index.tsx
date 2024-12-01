@@ -26,7 +26,6 @@ function Intro() {
                 Our Countries API is live now! 🎉
               </span>
             </div>
-
             <figure className="grid place-content-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,15 +52,22 @@ function Intro() {
           who want to access to information easily.
         </p>
 
-        <div className="flex justify-center mt-5">
+        <div className="flex justify-center gap-3 mt-5">
           <Link
             role="link"
-            href="https://dashboard.snackgraph.dev"
+            href="https://dash.snackgraph.dev"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 text-sm text-white fill-white bg-[var(--bg-brand-sel)] hover:bg-[var(--bg-brand-sel-hover)] duration-300 text-center font-semibold rounded-lg inline-flex gap-1"
+            className="px-4 py-2 text-sm text-white fill-white bg-[#222327] hover:bg-black duration-300 text-center font-semibold rounded-lg inline-flex gap-1"
           >
-            Create API Key
+            Start for free
+          </Link>
+          <Link
+            role="link"
+            href="/pricing"
+            className="px-4 py-2 text-sm fill-white bg-white duration-300 text-center font-semibold rounded-lg inline-flex gap-1 border border-gray-400 hover:border-[#222327]"
+          >
+            See our plans
           </Link>
         </div>
       </div>
