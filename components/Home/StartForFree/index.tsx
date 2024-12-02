@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function StartForFree() {
   return (
-    <div className="grid place-content-center h-[80dvh] px-3 bg-white">
+    <div className="grid place-content-center h-[80dvh] p-3 bg-white">
       <div className="max-w-screen-2xl m-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="grid place-content-center order-last lg:order-first">
@@ -38,9 +38,9 @@ function StartForFree() {
             <Image
               src="/snackgraph.svg"
               alt="SnackGraph's brand"
-              height={600}
-              width={600}
-              className="size-[220px] lg:size-[600px]"
+              height={500}
+              width={500}
+              className="size-[220px] lg:size-[500px]"
             />
           </div>
         </div>

@@ -4,9 +4,9 @@ import Link from "next/link";
 function Footer() {
   return (
     <footer className="lg:h-[45dvh] bg-[#222327] text-[--color-description-dark] z-50 px-3">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 px-3 pt-28">
-        <div className="pt-10 pb-10 lg:mb-0 order-last lg:order-first">
-          <div className="grid place-content-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 px-3 ">
+        <div className="lg:mb-0 order-last lg:order-first">
+          <div className="grid place-content-center lg:h-[45dvh]">
             <div className="hidden lg:block">
               <Image
                 alt="SnackGraph's brand dark version"
@@ -23,10 +23,9 @@ function Footer() {
                 height={210}
               />
             </div>
-          </div>
-
-          <div className="mt-10 text-sm text-center">
-            © {new Date().getFullYear()} SnackGraph. All rights reserved.
+            <div className="text-sm text-center">
+              © {new Date().getFullYear()} SnackGraph. All rights reserved.
+            </div>
           </div>
         </div>
         <div className="grid place-content-center">
